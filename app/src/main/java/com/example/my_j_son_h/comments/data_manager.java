@@ -1,4 +1,4 @@
-package com.example.my_j_son_h;
+package com.example.my_j_son_h.comments;
 
 public class data_manager {
     int id;
@@ -44,4 +44,6 @@ public class data_manager {
     public void setId(int id) {
         this.id = id;
     }
-}
+
+    }
+

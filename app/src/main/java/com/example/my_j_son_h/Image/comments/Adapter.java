@@ -1,4 +1,4 @@
-package com.example.my_j_son_h;
+package com.example.my_j_son_h.Image.comments;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.my_j_son_h.R;
 
 import java.util.ArrayList;
 
@@ -21,14 +23,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.viewholder> {
 
     @NonNull
     @Override
-    public Adapter.viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(context).inflate(R.layout.recycler_item_layout,parent,false);
         viewholder viewholder=new viewholder(view);
         return viewholder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Adapter.viewholder holder, int position) {
+    public void onBindViewHolder(@NonNull viewholder holder, int position) {
 
         holder.id.setText(""+data.get(position).id);
         holder.name.setText(""+data.get(position).name);
